@@ -29,6 +29,21 @@ namespace ParkingMachineConsole
             currentTotal = 0;
             costPerHour = 20;
         }
+        public int CurrentTotal
+        {
+            get
+            {
+                return currentTotal;
+            }
+        }
+        public void InsertMoney(int amount)
+        {
+
+        }
+        public int Cancel()
+        {
+
+        }
        
     }
 }
