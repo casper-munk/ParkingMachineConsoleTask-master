@@ -36,13 +36,35 @@ namespace ParkingMachineConsole
                 return currentTotal;
             }
         }
+        public int Total
+        {
+            get
+            {
+                return Total;
+            }
+        }
         public void InsertMoney(int amount)
         {
+            
+            if (amount > 0)
+            {
+                currentTotal = amount + currentTotal;
+
+            }
 
         }
         public int Cancel()
         {
-
+            int refund = currentTotal;
+            currentTotal = 0;
+            return refund;
+            
+        }
+        public string BuyTicket()
+        {
+            total = Total + currentTotal;
+            currentTotal = 0;
+            return string.Empty;
         }
        
     }
